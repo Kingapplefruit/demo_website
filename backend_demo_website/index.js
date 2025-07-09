@@ -9,7 +9,8 @@ const prisma = new PrismaClient()
 
 // Initialize Express app
 const app = express();
-const PORT = 3000;
+const PORT = process.env.PORT || 3000;
+
 
 // Middleware to enable CORS for all origins (for frontend-backend communication)
 app.use(cors());
