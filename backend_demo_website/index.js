@@ -19,7 +19,7 @@ app.use(cors());
 app.use(express.json());
 
 // Define POST endpoint to receive input text and store in database
-app.post('/api/save-text', async (req, res) => {
+app.post('/api/save-text/', async (req, res) => {
   try {
     const { text } = req.body;
 
